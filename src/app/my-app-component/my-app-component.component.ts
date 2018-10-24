@@ -18,7 +18,6 @@ export class MyAppComponentComponent implements OnInit {
   }
 
   test(){
-    this.cardexist=true;
     this.favouriteService.myService().subscribe(res => {
       this.myarr =res;
       this.testcitiesarr=this.myarr;
@@ -28,7 +27,4 @@ export class MyAppComponentComponent implements OnInit {
     });
   }
 
-  onSearchClick(){
-    
-  }
 }
